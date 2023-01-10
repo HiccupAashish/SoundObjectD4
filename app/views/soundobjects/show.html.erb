@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @soundobject.Name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @soundobject.image %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @soundobject.description %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @soundobject.color %>
+</p>
+
+<%= link_to 'Edit', edit_soundobject_path(@soundobject) %> |
+<%= link_to 'Back', soundobjects_path %>

@@ -1,0 +1,2 @@
+class Soundobject < ApplicationRecord
+end

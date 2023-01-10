@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Soundobjects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Description</th>
+      <th>Color</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @soundobjects.each do |soundobject| %>
+      <tr>
+        <td><%= soundobject.Name %></td>
+        <td><%= soundobject.image %></td>
+        <td><%= soundobject.description %></td>
+        <td><%= soundobject.color %></td>
+        <td><%= link_to 'Show', soundobject %></td>
+        <td><%= link_to 'Edit', edit_soundobject_path(soundobject) %></td>
+        <td><%= link_to 'Destroy', soundobject, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Soundobject', new_soundobject_path %>
